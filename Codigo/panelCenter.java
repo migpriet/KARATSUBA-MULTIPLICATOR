@@ -73,12 +73,8 @@ public class panelCenter extends JPanel{
 
 		public static BigInteger getNumero1(){
 			
-			BigInteger a;
+			return	new BigInteger(jtxtNumero1.getText()); 
 			
-			
-			
-			
-			return	new BigInteger(jtxtNumero1.getText());
 		}
 		
 		public static BigInteger getNumero2(){
