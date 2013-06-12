@@ -65,9 +65,8 @@ public class panelDown extends JPanel implements ActionListener{
 		public void actionPerformed(ActionEvent e) {
 			
 			if (e.getSource()==jbtonCalcular){
-				panelCenter.total(Karatsuba.multKaratsuba(panelCenter.getNumero1(),panelCenter.getNumero1()));
-				
-			}
+				panelCenter.total(Karatsuba.multKaratsuba(panelCenter.getNumero1(),panelCenter.getNumero2()));
+				}
 						
 			if (e.getSource()==jbtonBorrar){
 				panelCenter.borrar();
