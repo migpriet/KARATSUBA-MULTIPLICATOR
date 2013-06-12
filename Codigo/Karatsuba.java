@@ -15,7 +15,7 @@ public class Karatsuba {
 					int numMayor = Math.max(a.bitLength(), b.bitLength());
 				    
 				    //si el numero mayor usa menos de mil bits es mas eficiente la multiplicacion normal 
-				    if (numMayor <= 1000) {
+				    if (numMayor <= 100) {
 				      return multNormal(a,b);
 				    }
 				    // se determina en que bit se encuentra la mitad para separa los numeros
@@ -71,6 +71,6 @@ public class Karatsuba {
 	//genera un numero al azar de 1000 digitos para ser utilizado en la multiplicacion Karatsuba
 	public static BigInteger numeroAlAzar(){
 			
-		return new BigInteger(10, new Random());
+		return new BigInteger(100, new Random());
 	}
 }
